@@ -1,0 +1,894 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B4227919416E5270A53A3A5C794E454 /* ZZAESDecryptInputStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5AA585CDF794B94B16DA6814C3E093FE /* ZZAESDecryptInputStream.mm */; };
+		0D035D5EC473FD3350DC8BBBF6AF9050 /* ZZStandardCryptoEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 04A6213B8EA965EB3A1B278B80A08012 /* ZZStandardCryptoEngine.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		13BF878B53D152A1F7C3DD2C91F257F1 /* ZZArchiveEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 591A37FF4B30B9EA9F75236D8D640F41 /* ZZArchiveEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ADEF02143FE80856EE3F37E276C90FA /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9137FD834E8C7B20627BFB24391C1A33 /* SSLSecurity.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		240B3A2E2B1C538901221EF5D9334B05 /* ZZHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A06F1287193BB958810D3739F7CB05 /* ZZHeaders.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		24A70D63C144373A73D1943B53BACCDB /* ZZDataChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C98C4F02B0DFCDAB56E5525DFB41F77 /* ZZDataChannel.m */; };
+		25D899B1918A140C06D367FDE350A00F /* ZZOldArchiveEntryWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 103F1DD59BADA363229D027A23CB0C69 /* ZZOldArchiveEntryWriter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2ED273D5F9BFBFCF480F248923C2DA80 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96EC5280C7D528867772D3DD01F5FF97 /* Cocoa.framework */; };
+		34270B1A9D2D79CFF27A0DED708B6773 /* ZZStandardDecryptInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B101919710B924530B36B37264B0AEB /* ZZStandardDecryptInputStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		34B432988F1C8F4C6A115181843B435C /* ZZInflateInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 44FC379CD186236594BE352EB267465F /* ZZInflateInputStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3B06082BB1DB8D878FC3CD65B377FB2C /* ZZDataChannelOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 094EBF93C1676532BF0BE12A4B7537F3 /* ZZDataChannelOutput.m */; };
+		3C2E033D9AFE368697232E96131846B9 /* ZZNewArchiveEntryWriter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6DBAF76A2E09E8038AECA21316F6643A /* ZZNewArchiveEntryWriter.mm */; };
+		42C4E6A42205EBB8B58E4DA7F7AC84E4 /* ZZDataChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 44E213A2065ACC22882968E8873FB43F /* ZZDataChannel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4F5AEDBF87CF4356CF2A5CF6FA284BB4 /* ZZStoreOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C4618B6FCD229E2A1351A0EE6F569 /* ZZStoreOutputStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4F97186620384AD53A4AC534F5B5BA13 /* ZZConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0FA496E4A24DBC7CA020F79816D057 /* ZZConstants.m */; };
+		529B1F06E9135137F74971C5AFA6AAFB /* Pods-KeyTalk Client-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5824C8C30CC55225BE07F082413F7396 /* Pods-KeyTalk Client-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5377C4E99D40C1FA5AEE424752FC312C /* ZZNewArchiveEntryWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = B03D783EBAD5EDB6EEA8E8CB9BA151C3 /* ZZNewArchiveEntryWriter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		569F849B26C19C491EBBA2BD44379C20 /* ZZArchiveEntryWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE720DB1268ED1BECC3E83F476B5E29 /* ZZArchiveEntryWriter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		58016DD3A2F19DB1C92933B43B561C5E /* Pods-KeyTalk Client-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFED551C4CBFC705489A4AAAC6D9CF46 /* Pods-KeyTalk Client-dummy.m */; };
+		58EE7730C672BB737B7A5AA4B8620F2D /* ZZScopeGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE64686922FA8F00F110AA2D5AEA193 /* ZZScopeGuard.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5B222DB63694D8560EEC099388A20E7D /* ZZNewArchiveEntry.mm in Sources */ = {isa = PBXBuildFile; fileRef = F41A007CB72AE81E8578ED0E2CDABEB2 /* ZZNewArchiveEntry.mm */; };
+		5CFF0C73A48645F7B62B1E60E7CA5A69 /* ZZChannelOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = F7420161AADD181A601F19A8DAFDBD51 /* ZZChannelOutput.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5E80BBF58C8B9419167333855DBCD401 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96EC5280C7D528867772D3DD01F5FF97 /* Cocoa.framework */; };
+		60FA994FE4B93D5B0885AFE60B35EB7D /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4AA2DD597E527F3F5FC1B5FC18102F /* Starscream-dummy.m */; };
+		617FCA5925661BBCE54F4A0ECCC5CDA4 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2228A2E86E13CEB90C8DFAD2F1A555 /* ApplicationServices.framework */; };
+		6B56F78D354CFDDF6247E06183EC01BE /* ZipZap.h in Headers */ = {isa = PBXBuildFile; fileRef = B162343EFDE2A5A0B30093479B968E69 /* ZipZap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C31E3751A7AC914F078AF7F745D916B /* ZZInflateInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 2688EC0D0414AD71D749BBD4861DFDA6 /* ZZInflateInputStream.m */; };
+		6D50073AE169216BA22CF9687F0615EC /* ZZFileChannelOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = B890101FEB8F7F10917EAFDCFB73BD83 /* ZZFileChannelOutput.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6E21957F4D0091FD6851B6CA1A7AEA15 /* ZZDataChannelOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = D7365AAE22205B4A19CFDD78D8B199F9 /* ZZDataChannelOutput.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7589B9449CE5ADACBF51144E36828251 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96EC5280C7D528867772D3DD01F5FF97 /* Cocoa.framework */; };
+		762FD3DA6E533789C8491E888575B81D /* ZZStandardDecryptInputStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5394B6E71E5263ACE5ED717C1EA53A3 /* ZZStandardDecryptInputStream.mm */; };
+		76B349CA7D0CC01EA3B78813C06065A7 /* ZZArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = C80749F9D5C3893D1270EF9B0E5A2133 /* ZZArchive.mm */; };
+		890040BAB1FD69DF70B079F89EE5A8CC /* ZZArchiveEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = C321A52943213B81645D66AD7F101A16 /* ZZArchiveEntry.m */; };
+		89081D5EB3B77C5C8D45A0EB0252F1EE /* zipzap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B27F92255C5F3AFC081595D991D1F80D /* zipzap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A40B322010328EB0C2894BF3B0D95F58 /* ZZNewArchiveEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D9E33D45FFA7CD5EF655246F6B5E1C /* ZZNewArchiveEntry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AEF1EED5B1F3C63AE15DBB4EDEAC9373 /* ZZArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D4B9F4A74A0137AC42E5EA6D9E85822 /* ZZArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF58F4EC06C2057759E73CC2FA4AE3A5 /* ZZOldArchiveEntry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEDF0AF1C72F0644B7A1EA4DFBEA4D /* ZZOldArchiveEntry.mm */; };
+		B4CF6BD58AD5849F72B82844CCC95875 /* ZZStandardCryptoEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A625833527DA9ED13544FD2F8E700C4 /* ZZStandardCryptoEngine.cpp */; };
+		B58A98CB28B5031EECC4B24384489D37 /* ZZFileChannelOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = B8413A8AA8150A0638757B403D34E0C9 /* ZZFileChannelOutput.m */; };
+		BA2810A1A48E2560104E73FDB2B08763 /* ZZFileChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D1A041EF413CF4321BB944DD60184 /* ZZFileChannel.m */; };
+		BB5993941E076D8062493231086FF00A /* ZZStoreOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FEC7EF5ECFAD854B63807D02DEF7BE /* ZZStoreOutputStream.m */; };
+		BC55C8016A680B17D9FA688BD52DD44C /* ZZOldArchiveEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 602D8342BA38D74CA8176E27DFF2F44E /* ZZOldArchiveEntry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD141A48980EC4ABCABB16E8EFF94D1D /* zipzap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96715DA5B2F8C9AB91F42ABA5A079117 /* zipzap-dummy.m */; };
+		C0000A081C2CA0351900B173808DF1F5 /* ZZFileChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A889A2805FCB7E4BBA77920D67319FA /* ZZFileChannel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C5F8DC263C2228EB71141B8BE8002132 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FE6E76112B5EB17A6F91041BE5694F /* WebSocket.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C9818B29BC08DABBF20ED67CFBE2CE1E /* ZZDeflateOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DB89A3B71955F8C341CEAB273394984 /* ZZDeflateOutputStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CAE92A0665C7EFD4980079F2D825E344 /* ZZDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E28F5FA189F22B267821ACA386FE3C /* ZZDataProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D3DBF31A6228726D0AD4390F5D4344D7 /* ZZConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0D483D8DCD22A044D0428F613C7837 /* ZZConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D83792F8C7D17E8E4AF9F0968621FEE9 /* ZZError.m in Sources */ = {isa = PBXBuildFile; fileRef = AB937268123E685533782E8CF0871EEA /* ZZError.m */; };
+		DDBDEC38D9498D54AC172A0667C24036 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53D67278BA20FCF9737E9A95ECF5E921 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E054BAE5C0A2093CFEAE1F6A1407086E /* ZZDeflateOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F056DAFCA7DD46B0B6FC6B19AEFED22F /* ZZDeflateOutputStream.m */; };
+		E2F45A68D75EC1F747496F0CCDC27699 /* ZZChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E580525E9EE8CC774D40E0EBA57ED3F /* ZZChannel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E42CCEA980FD03F8B89D36702F9F4DF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38E1169A472371CC08354AE571D5C00 /* Foundation.framework */; };
+		E643F0C43B294E4C815C8B06D1D7D003 /* ZZError.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E580CE5D450887CC0069AAC6DDB4AED /* ZZError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7EF8D40B8B45DE6892CB035AD493EE6 /* ZZOldArchiveEntryWriter.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAE4CE037550CA02DC6EE2DB9306A18F /* ZZOldArchiveEntryWriter.mm */; };
+		F4BF7B35B3077345637C112DC563B27E /* ZZAESDecryptInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 45F0965803D6E94E2FCC357CB7ACF047 /* ZZAESDecryptInputStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38B832F65BAC9F0E9D69B2104BDB6216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80B2FFA97A33ADB50AC6D4EB40AC24B4;
+			remoteInfo = Starscream;
+		};
+		F31D69E4D553BEEED07EEAC9F4FC7082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48790E721738A633B4BBEF90C0A9C703;
+			remoteInfo = zipzap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		028B96E140D8F25F816756079D307B9B /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A6213B8EA965EB3A1B278B80A08012 /* ZZStandardCryptoEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZStandardCryptoEngine.h; path = ZipZap/ZZStandardCryptoEngine.h; sourceTree = "<group>"; };
+		06D9E33D45FFA7CD5EF655246F6B5E1C /* ZZNewArchiveEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZNewArchiveEntry.h; path = ZipZap/ZZNewArchiveEntry.h; sourceTree = "<group>"; };
+		094EBF93C1676532BF0BE12A4B7537F3 /* ZZDataChannelOutput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZDataChannelOutput.m; path = ZipZap/ZZDataChannelOutput.m; sourceTree = "<group>"; };
+		09764D0BBA6A02DA3E62203CF167327D /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Starscream.modulemap; sourceTree = "<group>"; };
+		0AFA9EAAF638EFFDBED4B57B5F0EDEDC /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		0E580CE5D450887CC0069AAC6DDB4AED /* ZZError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZError.h; path = ZipZap/ZZError.h; sourceTree = "<group>"; };
+		103F1DD59BADA363229D027A23CB0C69 /* ZZOldArchiveEntryWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZOldArchiveEntryWriter.h; path = ZipZap/ZZOldArchiveEntryWriter.h; sourceTree = "<group>"; };
+		13A2E30D414D82728CFC2BEA25EE7F13 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C98C4F02B0DFCDAB56E5525DFB41F77 /* ZZDataChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZDataChannel.m; path = ZipZap/ZZDataChannel.m; sourceTree = "<group>"; };
+		2688EC0D0414AD71D749BBD4861DFDA6 /* ZZInflateInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZInflateInputStream.m; path = ZipZap/ZZInflateInputStream.m; sourceTree = "<group>"; };
+		28B0AB0BFE56734229BB83CDCD998BAD /* Pods-KeyTalk Client-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeyTalk Client-acknowledgements.plist"; sourceTree = "<group>"; };
+		29E28F5FA189F22B267821ACA386FE3C /* ZZDataProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZDataProvider.h; path = ZipZap/ZZDataProvider.h; sourceTree = "<group>"; };
+		2E580525E9EE8CC774D40E0EBA57ED3F /* ZZChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZChannel.h; path = ZipZap/ZZChannel.h; sourceTree = "<group>"; };
+		3A889A2805FCB7E4BBA77920D67319FA /* ZZFileChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFileChannel.h; path = ZipZap/ZZFileChannel.h; sourceTree = "<group>"; };
+		3AA1B075D3D9701FD3E55EB95C08A47C /* Pods-KeyTalk Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeyTalk Client.release.xcconfig"; sourceTree = "<group>"; };
+		3B101919710B924530B36B37264B0AEB /* ZZStandardDecryptInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZStandardDecryptInputStream.h; path = ZipZap/ZZStandardDecryptInputStream.h; sourceTree = "<group>"; };
+		44A06F1287193BB958810D3739F7CB05 /* ZZHeaders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZHeaders.h; path = ZipZap/ZZHeaders.h; sourceTree = "<group>"; };
+		44E213A2065ACC22882968E8873FB43F /* ZZDataChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZDataChannel.h; path = ZipZap/ZZDataChannel.h; sourceTree = "<group>"; };
+		44FC379CD186236594BE352EB267465F /* ZZInflateInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZInflateInputStream.h; path = ZipZap/ZZInflateInputStream.h; sourceTree = "<group>"; };
+		45F0965803D6E94E2FCC357CB7ACF047 /* ZZAESDecryptInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZAESDecryptInputStream.h; path = ZipZap/ZZAESDecryptInputStream.h; sourceTree = "<group>"; };
+		4DE64686922FA8F00F110AA2D5AEA193 /* ZZScopeGuard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZScopeGuard.h; path = ZipZap/ZZScopeGuard.h; sourceTree = "<group>"; };
+		53D67278BA20FCF9737E9A95ECF5E921 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		5824C8C30CC55225BE07F082413F7396 /* Pods-KeyTalk Client-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KeyTalk Client-umbrella.h"; sourceTree = "<group>"; };
+		591A37FF4B30B9EA9F75236D8D640F41 /* ZZArchiveEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZArchiveEntry.h; path = ZipZap/ZZArchiveEntry.h; sourceTree = "<group>"; };
+		5AA585CDF794B94B16DA6814C3E093FE /* ZZAESDecryptInputStream.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZAESDecryptInputStream.mm; path = ZipZap/ZZAESDecryptInputStream.mm; sourceTree = "<group>"; };
+		5B7C4618B6FCD229E2A1351A0EE6F569 /* ZZStoreOutputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZStoreOutputStream.h; path = ZipZap/ZZStoreOutputStream.h; sourceTree = "<group>"; };
+		5EDB1DABCE67D532DB33159E7807CC2F /* Pods-KeyTalk Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeyTalk Client.debug.xcconfig"; sourceTree = "<group>"; };
+		602D8342BA38D74CA8176E27DFF2F44E /* ZZOldArchiveEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZOldArchiveEntry.h; path = ZipZap/ZZOldArchiveEntry.h; sourceTree = "<group>"; };
+		67EADC52AC10F24E61759F505449AF10 /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
+		6A625833527DA9ED13544FD2F8E700C4 /* ZZStandardCryptoEngine.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZStandardCryptoEngine.cpp; path = ZipZap/ZZStandardCryptoEngine.cpp; sourceTree = "<group>"; };
+		6D4B9F4A74A0137AC42E5EA6D9E85822 /* ZZArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZArchive.h; path = ZipZap/ZZArchive.h; sourceTree = "<group>"; };
+		6DBAF76A2E09E8038AECA21316F6643A /* ZZNewArchiveEntryWriter.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZNewArchiveEntryWriter.mm; path = ZipZap/ZZNewArchiveEntryWriter.mm; sourceTree = "<group>"; };
+		796E60C1FBBE8605FA8C5DBA5202AF84 /* Pods-KeyTalk Client.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KeyTalk Client.modulemap"; sourceTree = "<group>"; };
+		8ADEDF0AF1C72F0644B7A1EA4DFBEA4D /* ZZOldArchiveEntry.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZOldArchiveEntry.mm; path = ZipZap/ZZOldArchiveEntry.mm; sourceTree = "<group>"; };
+		8D03CD028F3F6542428DF07FCC849FAC /* Pods_KeyTalk_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KeyTalk_Client.framework; path = "Pods-KeyTalk Client.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9137FD834E8C7B20627BFB24391C1A33 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Source/SSLSecurity.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96715DA5B2F8C9AB91F42ABA5A079117 /* zipzap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "zipzap-dummy.m"; sourceTree = "<group>"; };
+		96EC5280C7D528867772D3DD01F5FF97 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		9C0D483D8DCD22A044D0428F613C7837 /* ZZConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZConstants.h; path = ZipZap/ZZConstants.h; sourceTree = "<group>"; };
+		9DB89A3B71955F8C341CEAB273394984 /* ZZDeflateOutputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZDeflateOutputStream.h; path = ZipZap/ZZDeflateOutputStream.h; sourceTree = "<group>"; };
+		A5394B6E71E5263ACE5ED717C1EA53A3 /* ZZStandardDecryptInputStream.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZStandardDecryptInputStream.mm; path = ZipZap/ZZStandardDecryptInputStream.mm; sourceTree = "<group>"; };
+		A81D1A041EF413CF4321BB944DD60184 /* ZZFileChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFileChannel.m; path = ZipZap/ZZFileChannel.m; sourceTree = "<group>"; };
+		AB937268123E685533782E8CF0871EEA /* ZZError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZError.m; path = ZipZap/ZZError.m; sourceTree = "<group>"; };
+		B03D783EBAD5EDB6EEA8E8CB9BA151C3 /* ZZNewArchiveEntryWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZNewArchiveEntryWriter.h; path = ZipZap/ZZNewArchiveEntryWriter.h; sourceTree = "<group>"; };
+		B0A7C6573FF32DF1A4CC1E6AE8247505 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B162343EFDE2A5A0B30093479B968E69 /* ZipZap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipZap.h; path = ZipZap/ZipZap.h; sourceTree = "<group>"; };
+		B27F92255C5F3AFC081595D991D1F80D /* zipzap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "zipzap-umbrella.h"; sourceTree = "<group>"; };
+		B443863373AC3830A1EB2E006A2FB266 /* Pods-KeyTalk Client-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KeyTalk Client-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B5A00D099AC0B61C9E4BC8AEC91596FB /* zipzap-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "zipzap-prefix.pch"; sourceTree = "<group>"; };
+		B5B2B117620B58058AE4A76C0ACCEE29 /* zipzap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = zipzap.framework; path = zipzap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8413A8AA8150A0638757B403D34E0C9 /* ZZFileChannelOutput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFileChannelOutput.m; path = ZipZap/ZZFileChannelOutput.m; sourceTree = "<group>"; };
+		B890101FEB8F7F10917EAFDCFB73BD83 /* ZZFileChannelOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFileChannelOutput.h; path = ZipZap/ZZFileChannelOutput.h; sourceTree = "<group>"; };
+		BF0FA496E4A24DBC7CA020F79816D057 /* ZZConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZConstants.m; path = ZipZap/ZZConstants.m; sourceTree = "<group>"; };
+		C008DE378F32B6A17481204B070AD291 /* Pods-KeyTalk Client-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KeyTalk Client-frameworks.sh"; sourceTree = "<group>"; };
+		C321A52943213B81645D66AD7F101A16 /* ZZArchiveEntry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZArchiveEntry.m; path = ZipZap/ZZArchiveEntry.m; sourceTree = "<group>"; };
+		C7FE6E76112B5EB17A6F91041BE5694F /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Source/WebSocket.swift; sourceTree = "<group>"; };
+		C80749F9D5C3893D1270EF9B0E5A2133 /* ZZArchive.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZArchive.mm; path = ZipZap/ZZArchive.mm; sourceTree = "<group>"; };
+		CBCAE563E55EFC474CE6824D5AEF706E /* zipzap.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = zipzap.xcconfig; sourceTree = "<group>"; };
+		D19023EFF4C93A7E32B2A26FE8AD07E5 /* zipzap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = zipzap.modulemap; sourceTree = "<group>"; };
+		D7365AAE22205B4A19CFDD78D8B199F9 /* ZZDataChannelOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZDataChannelOutput.h; path = ZipZap/ZZDataChannelOutput.h; sourceTree = "<group>"; };
+		DA4AA2DD597E527F3F5FC1B5FC18102F /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		DB2228A2E86E13CEB90C8DFAD2F1A555 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/ApplicationServices.framework; sourceTree = DEVELOPER_DIR; };
+		F056DAFCA7DD46B0B6FC6B19AEFED22F /* ZZDeflateOutputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZDeflateOutputStream.m; path = ZipZap/ZZDeflateOutputStream.m; sourceTree = "<group>"; };
+		F38E1169A472371CC08354AE571D5C00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F3FEC7EF5ECFAD854B63807D02DEF7BE /* ZZStoreOutputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZStoreOutputStream.m; path = ZipZap/ZZStoreOutputStream.m; sourceTree = "<group>"; };
+		F41A007CB72AE81E8578ED0E2CDABEB2 /* ZZNewArchiveEntry.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZNewArchiveEntry.mm; path = ZipZap/ZZNewArchiveEntry.mm; sourceTree = "<group>"; };
+		F7420161AADD181A601F19A8DAFDBD51 /* ZZChannelOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZChannelOutput.h; path = ZipZap/ZZChannelOutput.h; sourceTree = "<group>"; };
+		FAD49647FC2CE044DDE52A4D1D8FE76F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE4CE037550CA02DC6EE2DB9306A18F /* ZZOldArchiveEntryWriter.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZOldArchiveEntryWriter.mm; path = ZipZap/ZZOldArchiveEntryWriter.mm; sourceTree = "<group>"; };
+		FAE720DB1268ED1BECC3E83F476B5E29 /* ZZArchiveEntryWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZArchiveEntryWriter.h; path = ZipZap/ZZArchiveEntryWriter.h; sourceTree = "<group>"; };
+		FE7BC148A2A37E6CCDF237C4042DBF3D /* Pods-KeyTalk Client-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KeyTalk Client-resources.sh"; sourceTree = "<group>"; };
+		FFED551C4CBFC705489A4AAAC6D9CF46 /* Pods-KeyTalk Client-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KeyTalk Client-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25BB5C800A615AE70A029A28A505E751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7589B9449CE5ADACBF51144E36828251 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E9393C53FD289052C990EB4D2ABD690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E80BBF58C8B9419167333855DBCD401 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6729B9E6A43854A534292FC27983B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				617FCA5925661BBCE54F4A0ECCC5CDA4 /* ApplicationServices.framework in Frameworks */,
+				2ED273D5F9BFBFCF480F248923C2DA80 /* Cocoa.framework in Frameworks */,
+				E42CCEA980FD03F8B89D36702F9F4DF3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		067C9D3E1DB1E1414119A7D9E01CB750 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF3DF6C8B851EF9C331AF0141EA2D863 /* Starscream */,
+				4F2636AF7EA9C716FBB7B76F0996355A /* zipzap */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0BF7013C87320D21A2EE192D4F4C346C /* Pods-KeyTalk Client */ = {
+			isa = PBXGroup;
+			children = (
+				FAD49647FC2CE044DDE52A4D1D8FE76F /* Info.plist */,
+				796E60C1FBBE8605FA8C5DBA5202AF84 /* Pods-KeyTalk Client.modulemap */,
+				B443863373AC3830A1EB2E006A2FB266 /* Pods-KeyTalk Client-acknowledgements.markdown */,
+				28B0AB0BFE56734229BB83CDCD998BAD /* Pods-KeyTalk Client-acknowledgements.plist */,
+				FFED551C4CBFC705489A4AAAC6D9CF46 /* Pods-KeyTalk Client-dummy.m */,
+				C008DE378F32B6A17481204B070AD291 /* Pods-KeyTalk Client-frameworks.sh */,
+				FE7BC148A2A37E6CCDF237C4042DBF3D /* Pods-KeyTalk Client-resources.sh */,
+				5824C8C30CC55225BE07F082413F7396 /* Pods-KeyTalk Client-umbrella.h */,
+				5EDB1DABCE67D532DB33159E7807CC2F /* Pods-KeyTalk Client.debug.xcconfig */,
+				3AA1B075D3D9701FD3E55EB95C08A47C /* Pods-KeyTalk Client.release.xcconfig */,
+			);
+			name = "Pods-KeyTalk Client";
+			path = "Target Support Files/Pods-KeyTalk Client";
+			sourceTree = "<group>";
+		};
+		14364E8CAF483923F05414169A8558DC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				13A2E30D414D82728CFC2BEA25EE7F13 /* Info.plist */,
+				D19023EFF4C93A7E32B2A26FE8AD07E5 /* zipzap.modulemap */,
+				CBCAE563E55EFC474CE6824D5AEF706E /* zipzap.xcconfig */,
+				96715DA5B2F8C9AB91F42ABA5A079117 /* zipzap-dummy.m */,
+				B5A00D099AC0B61C9E4BC8AEC91596FB /* zipzap-prefix.pch */,
+				B27F92255C5F3AFC081595D991D1F80D /* zipzap-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/zipzap";
+			sourceTree = "<group>";
+		};
+		317A79311818E323D5BE76516FD09EEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D03CD028F3F6542428DF07FCC849FAC /* Pods_KeyTalk_Client.framework */,
+				028B96E140D8F25F816756079D307B9B /* Starscream.framework */,
+				B5B2B117620B58058AE4A76C0ACCEE29 /* zipzap.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		451EFF8D298D0E14F535FD18E9E6D44F /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				DB2228A2E86E13CEB90C8DFAD2F1A555 /* ApplicationServices.framework */,
+				96EC5280C7D528867772D3DD01F5FF97 /* Cocoa.framework */,
+				F38E1169A472371CC08354AE571D5C00 /* Foundation.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		4F2636AF7EA9C716FBB7B76F0996355A /* zipzap */ = {
+			isa = PBXGroup;
+			children = (
+				B162343EFDE2A5A0B30093479B968E69 /* ZipZap.h */,
+				45F0965803D6E94E2FCC357CB7ACF047 /* ZZAESDecryptInputStream.h */,
+				5AA585CDF794B94B16DA6814C3E093FE /* ZZAESDecryptInputStream.mm */,
+				6D4B9F4A74A0137AC42E5EA6D9E85822 /* ZZArchive.h */,
+				C80749F9D5C3893D1270EF9B0E5A2133 /* ZZArchive.mm */,
+				591A37FF4B30B9EA9F75236D8D640F41 /* ZZArchiveEntry.h */,
+				C321A52943213B81645D66AD7F101A16 /* ZZArchiveEntry.m */,
+				FAE720DB1268ED1BECC3E83F476B5E29 /* ZZArchiveEntryWriter.h */,
+				2E580525E9EE8CC774D40E0EBA57ED3F /* ZZChannel.h */,
+				F7420161AADD181A601F19A8DAFDBD51 /* ZZChannelOutput.h */,
+				9C0D483D8DCD22A044D0428F613C7837 /* ZZConstants.h */,
+				BF0FA496E4A24DBC7CA020F79816D057 /* ZZConstants.m */,
+				44E213A2065ACC22882968E8873FB43F /* ZZDataChannel.h */,
+				1C98C4F02B0DFCDAB56E5525DFB41F77 /* ZZDataChannel.m */,
+				D7365AAE22205B4A19CFDD78D8B199F9 /* ZZDataChannelOutput.h */,
+				094EBF93C1676532BF0BE12A4B7537F3 /* ZZDataChannelOutput.m */,
+				29E28F5FA189F22B267821ACA386FE3C /* ZZDataProvider.h */,
+				9DB89A3B71955F8C341CEAB273394984 /* ZZDeflateOutputStream.h */,
+				F056DAFCA7DD46B0B6FC6B19AEFED22F /* ZZDeflateOutputStream.m */,
+				0E580CE5D450887CC0069AAC6DDB4AED /* ZZError.h */,
+				AB937268123E685533782E8CF0871EEA /* ZZError.m */,
+				3A889A2805FCB7E4BBA77920D67319FA /* ZZFileChannel.h */,
+				A81D1A041EF413CF4321BB944DD60184 /* ZZFileChannel.m */,
+				B890101FEB8F7F10917EAFDCFB73BD83 /* ZZFileChannelOutput.h */,
+				B8413A8AA8150A0638757B403D34E0C9 /* ZZFileChannelOutput.m */,
+				44A06F1287193BB958810D3739F7CB05 /* ZZHeaders.h */,
+				44FC379CD186236594BE352EB267465F /* ZZInflateInputStream.h */,
+				2688EC0D0414AD71D749BBD4861DFDA6 /* ZZInflateInputStream.m */,
+				06D9E33D45FFA7CD5EF655246F6B5E1C /* ZZNewArchiveEntry.h */,
+				F41A007CB72AE81E8578ED0E2CDABEB2 /* ZZNewArchiveEntry.mm */,
+				B03D783EBAD5EDB6EEA8E8CB9BA151C3 /* ZZNewArchiveEntryWriter.h */,
+				6DBAF76A2E09E8038AECA21316F6643A /* ZZNewArchiveEntryWriter.mm */,
+				602D8342BA38D74CA8176E27DFF2F44E /* ZZOldArchiveEntry.h */,
+				8ADEDF0AF1C72F0644B7A1EA4DFBEA4D /* ZZOldArchiveEntry.mm */,
+				103F1DD59BADA363229D027A23CB0C69 /* ZZOldArchiveEntryWriter.h */,
+				FAE4CE037550CA02DC6EE2DB9306A18F /* ZZOldArchiveEntryWriter.mm */,
+				4DE64686922FA8F00F110AA2D5AEA193 /* ZZScopeGuard.h */,
+				6A625833527DA9ED13544FD2F8E700C4 /* ZZStandardCryptoEngine.cpp */,
+				04A6213B8EA965EB3A1B278B80A08012 /* ZZStandardCryptoEngine.h */,
+				3B101919710B924530B36B37264B0AEB /* ZZStandardDecryptInputStream.h */,
+				A5394B6E71E5263ACE5ED717C1EA53A3 /* ZZStandardDecryptInputStream.mm */,
+				5B7C4618B6FCD229E2A1351A0EE6F569 /* ZZStoreOutputStream.h */,
+				F3FEC7EF5ECFAD854B63807D02DEF7BE /* ZZStoreOutputStream.m */,
+				14364E8CAF483923F05414169A8558DC /* Support Files */,
+			);
+			name = zipzap;
+			path = zipzap;
+			sourceTree = "<group>";
+		};
+		5F3C3D8BC06304F279A51C02AA404918 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0A7C6573FF32DF1A4CC1E6AE8247505 /* Info.plist */,
+				09764D0BBA6A02DA3E62203CF167327D /* Starscream.modulemap */,
+				67EADC52AC10F24E61759F505449AF10 /* Starscream.xcconfig */,
+				DA4AA2DD597E527F3F5FC1B5FC18102F /* Starscream-dummy.m */,
+				0AFA9EAAF638EFFDBED4B57B5F0EDEDC /* Starscream-prefix.pch */,
+				53D67278BA20FCF9737E9A95ECF5E921 /* Starscream-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				96D996393384F21972E2DD81788EE22C /* Frameworks */,
+				067C9D3E1DB1E1414119A7D9E01CB750 /* Pods */,
+				317A79311818E323D5BE76516FD09EEC /* Products */,
+				D9DFE15C1F9C3B87C922FB6814E3F84F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		96D996393384F21972E2DD81788EE22C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				451EFF8D298D0E14F535FD18E9E6D44F /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9DFE15C1F9C3B87C922FB6814E3F84F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BF7013C87320D21A2EE192D4F4C346C /* Pods-KeyTalk Client */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EF3DF6C8B851EF9C331AF0141EA2D863 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				9137FD834E8C7B20627BFB24391C1A33 /* SSLSecurity.swift */,
+				C7FE6E76112B5EB17A6F91041BE5694F /* WebSocket.swift */,
+				5F3C3D8BC06304F279A51C02AA404918 /* Support Files */,
+			);
+			name = Starscream;
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		125706C3EE7203836A5E05FEA395796F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBDEC38D9498D54AC172A0667C24036 /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		697D57D05F5321323CDE9901B18B7C16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529B1F06E9135137F74971C5AFA6AAFB /* Pods-KeyTalk Client-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716DFCEF239B6658765DC9B23F5D7558 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89081D5EB3B77C5C8D45A0EB0252F1EE /* zipzap-umbrella.h in Headers */,
+				6B56F78D354CFDDF6247E06183EC01BE /* ZipZap.h in Headers */,
+				F4BF7B35B3077345637C112DC563B27E /* ZZAESDecryptInputStream.h in Headers */,
+				AEF1EED5B1F3C63AE15DBB4EDEAC9373 /* ZZArchive.h in Headers */,
+				13BF878B53D152A1F7C3DD2C91F257F1 /* ZZArchiveEntry.h in Headers */,
+				569F849B26C19C491EBBA2BD44379C20 /* ZZArchiveEntryWriter.h in Headers */,
+				E2F45A68D75EC1F747496F0CCDC27699 /* ZZChannel.h in Headers */,
+				5CFF0C73A48645F7B62B1E60E7CA5A69 /* ZZChannelOutput.h in Headers */,
+				D3DBF31A6228726D0AD4390F5D4344D7 /* ZZConstants.h in Headers */,
+				42C4E6A42205EBB8B58E4DA7F7AC84E4 /* ZZDataChannel.h in Headers */,
+				6E21957F4D0091FD6851B6CA1A7AEA15 /* ZZDataChannelOutput.h in Headers */,
+				CAE92A0665C7EFD4980079F2D825E344 /* ZZDataProvider.h in Headers */,
+				C9818B29BC08DABBF20ED67CFBE2CE1E /* ZZDeflateOutputStream.h in Headers */,
+				E643F0C43B294E4C815C8B06D1D7D003 /* ZZError.h in Headers */,
+				C0000A081C2CA0351900B173808DF1F5 /* ZZFileChannel.h in Headers */,
+				6D50073AE169216BA22CF9687F0615EC /* ZZFileChannelOutput.h in Headers */,
+				240B3A2E2B1C538901221EF5D9334B05 /* ZZHeaders.h in Headers */,
+				34B432988F1C8F4C6A115181843B435C /* ZZInflateInputStream.h in Headers */,
+				A40B322010328EB0C2894BF3B0D95F58 /* ZZNewArchiveEntry.h in Headers */,
+				5377C4E99D40C1FA5AEE424752FC312C /* ZZNewArchiveEntryWriter.h in Headers */,
+				BC55C8016A680B17D9FA688BD52DD44C /* ZZOldArchiveEntry.h in Headers */,
+				25D899B1918A140C06D367FDE350A00F /* ZZOldArchiveEntryWriter.h in Headers */,
+				58EE7730C672BB737B7A5AA4B8620F2D /* ZZScopeGuard.h in Headers */,
+				0D035D5EC473FD3350DC8BBBF6AF9050 /* ZZStandardCryptoEngine.h in Headers */,
+				34270B1A9D2D79CFF27A0DED708B6773 /* ZZStandardDecryptInputStream.h in Headers */,
+				4F5AEDBF87CF4356CF2A5CF6FA284BB4 /* ZZStoreOutputStream.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		120F84AA786B268EBFD91C3D54A028B4 /* Pods-KeyTalk Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CDA405D6B46A7D1A5056B5B9FB8F338 /* Build configuration list for PBXNativeTarget "Pods-KeyTalk Client" */;
+			buildPhases = (
+				98D0E960EE9ABA5A7A2A8844C01EEE6E /* Sources */,
+				7E9393C53FD289052C990EB4D2ABD690 /* Frameworks */,
+				697D57D05F5321323CDE9901B18B7C16 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5A03725DC071B58256ECA3BC0AD074B /* PBXTargetDependency */,
+				F6C056565380645819EF533F131458F2 /* PBXTargetDependency */,
+			);
+			name = "Pods-KeyTalk Client";
+			productName = "Pods-KeyTalk Client";
+			productReference = 8D03CD028F3F6542428DF07FCC849FAC /* Pods_KeyTalk_Client.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		48790E721738A633B4BBEF90C0A9C703 /* zipzap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA3AFCDC519B38A1083064D7BDD5E714 /* Build configuration list for PBXNativeTarget "zipzap" */;
+			buildPhases = (
+				3BE25825C6D5CA0E90ADAB75ECA2A0E3 /* Sources */,
+				FD6729B9E6A43854A534292FC27983B1 /* Frameworks */,
+				716DFCEF239B6658765DC9B23F5D7558 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zipzap;
+			productName = zipzap;
+			productReference = B5B2B117620B58058AE4A76C0ACCEE29 /* zipzap.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80B2FFA97A33ADB50AC6D4EB40AC24B4 /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4C0EC79F42223AE13E09E4CA00DD65C /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				EB504D9519BBF84593219210B2DC0249 /* Sources */,
+				25BB5C800A615AE70A029A28A505E751 /* Frameworks */,
+				125706C3EE7203836A5E05FEA395796F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 028B96E140D8F25F816756079D307B9B /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 317A79311818E323D5BE76516FD09EEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				120F84AA786B268EBFD91C3D54A028B4 /* Pods-KeyTalk Client */,
+				80B2FFA97A33ADB50AC6D4EB40AC24B4 /* Starscream */,
+				48790E721738A633B4BBEF90C0A9C703 /* zipzap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BE25825C6D5CA0E90ADAB75ECA2A0E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD141A48980EC4ABCABB16E8EFF94D1D /* zipzap-dummy.m in Sources */,
+				0B4227919416E5270A53A3A5C794E454 /* ZZAESDecryptInputStream.mm in Sources */,
+				76B349CA7D0CC01EA3B78813C06065A7 /* ZZArchive.mm in Sources */,
+				890040BAB1FD69DF70B079F89EE5A8CC /* ZZArchiveEntry.m in Sources */,
+				4F97186620384AD53A4AC534F5B5BA13 /* ZZConstants.m in Sources */,
+				24A70D63C144373A73D1943B53BACCDB /* ZZDataChannel.m in Sources */,
+				3B06082BB1DB8D878FC3CD65B377FB2C /* ZZDataChannelOutput.m in Sources */,
+				E054BAE5C0A2093CFEAE1F6A1407086E /* ZZDeflateOutputStream.m in Sources */,
+				D83792F8C7D17E8E4AF9F0968621FEE9 /* ZZError.m in Sources */,
+				BA2810A1A48E2560104E73FDB2B08763 /* ZZFileChannel.m in Sources */,
+				B58A98CB28B5031EECC4B24384489D37 /* ZZFileChannelOutput.m in Sources */,
+				6C31E3751A7AC914F078AF7F745D916B /* ZZInflateInputStream.m in Sources */,
+				5B222DB63694D8560EEC099388A20E7D /* ZZNewArchiveEntry.mm in Sources */,
+				3C2E033D9AFE368697232E96131846B9 /* ZZNewArchiveEntryWriter.mm in Sources */,
+				AF58F4EC06C2057759E73CC2FA4AE3A5 /* ZZOldArchiveEntry.mm in Sources */,
+				E7EF8D40B8B45DE6892CB035AD493EE6 /* ZZOldArchiveEntryWriter.mm in Sources */,
+				B4CF6BD58AD5849F72B82844CCC95875 /* ZZStandardCryptoEngine.cpp in Sources */,
+				762FD3DA6E533789C8491E888575B81D /* ZZStandardDecryptInputStream.mm in Sources */,
+				BB5993941E076D8062493231086FF00A /* ZZStoreOutputStream.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D0E960EE9ABA5A7A2A8844C01EEE6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58016DD3A2F19DB1C92933B43B561C5E /* Pods-KeyTalk Client-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB504D9519BBF84593219210B2DC0249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADEF02143FE80856EE3F37E276C90FA /* SSLSecurity.swift in Sources */,
+				60FA994FE4B93D5B0885AFE60B35EB7D /* Starscream-dummy.m in Sources */,
+				C5F8DC263C2228EB71141B8BE8002132 /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5A03725DC071B58256ECA3BC0AD074B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 80B2FFA97A33ADB50AC6D4EB40AC24B4 /* Starscream */;
+			targetProxy = 38B832F65BAC9F0E9D69B2104BDB6216 /* PBXContainerItemProxy */;
+		};
+		F6C056565380645819EF533F131458F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = zipzap;
+			target = 48790E721738A633B4BBEF90C0A9C703 /* zipzap */;
+			targetProxy = F31D69E4D553BEEED07EEAC9F4FC7082 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		042E46096E92C4D29FDDEEBE230A0C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67EADC52AC10F24E61759F505449AF10 /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		249446A7FFFFF75933CC723CD91BE8D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA1B075D3D9701FD3E55EB95C08A47C /* Pods-KeyTalk Client.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KeyTalk Client/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-KeyTalk Client/Pods-KeyTalk Client.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KeyTalk_Client;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3046ECB7ACB8CC5BA42D54B8EFF227CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67EADC52AC10F24E61759F505449AF10 /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9420A7205B8F85520AF134F4EE25F7CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCA8869897FA70D64AB3D77582C2FD5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EDB1DABCE67D532DB33159E7807CC2F /* Pods-KeyTalk Client.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KeyTalk Client/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-KeyTalk Client/Pods-KeyTalk Client.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KeyTalk_Client;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE4270979ADCDFE9A2616057AF9E6B43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBCAE563E55EFC474CE6824D5AEF706E /* zipzap.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/zipzap/zipzap-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/zipzap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/zipzap/zipzap.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = zipzap;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F653E316AB5F825D3AD0CAE700E37071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F71DE2EFA3648318ED1D391F3E592C87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBCAE563E55EFC474CE6824D5AEF706E /* zipzap.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/zipzap/zipzap-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/zipzap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/zipzap/zipzap.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = zipzap;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F653E316AB5F825D3AD0CAE700E37071 /* Debug */,
+				9420A7205B8F85520AF134F4EE25F7CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CDA405D6B46A7D1A5056B5B9FB8F338 /* Build configuration list for PBXNativeTarget "Pods-KeyTalk Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA8869897FA70D64AB3D77582C2FD5B /* Debug */,
+				249446A7FFFFF75933CC723CD91BE8D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4C0EC79F42223AE13E09E4CA00DD65C /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3046ECB7ACB8CC5BA42D54B8EFF227CB /* Debug */,
+				042E46096E92C4D29FDDEEBE230A0C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA3AFCDC519B38A1083064D7BDD5E714 /* Build configuration list for PBXNativeTarget "zipzap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F71DE2EFA3648318ED1D391F3E592C87 /* Debug */,
+				DE4270979ADCDFE9A2616057AF9E6B43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,15 @@
+PODS:
+  - Starscream (2.0.2)
+  - zipzap (8.0.4)
+
+DEPENDENCIES:
+  - Starscream (~> 2.0.0)
+  - zipzap (~> 8.0.4)
+
+SPEC CHECKSUMS:
+  Starscream: 6c135a34e0a6e60cedaa0b30db67a4c05cf7cd38
+  zipzap: 45be5e182aead61fbb8300ddb4766f8e82a557c4
+
+PODFILE CHECKSUM: 0335e457237d981ed3c1c60c36f50b9ac2ece5ba
+
+COCOAPODS: 1.1.1
