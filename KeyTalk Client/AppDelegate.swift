@@ -321,8 +321,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, WebSocketDelegate, UniqueArr
     
     _ = Timer.scheduledTimer(timeInterval: 0, target: self, selector: #selector(startProxy), userInfo: nil, repeats: false)
     
-    if (userDefaults.object(forKey: "launchAtLogin") != nil) {
-      startAtLogin(value: true)
+    if (userDefaults.object(forKey: "launchAtLogin") == nil) {
+      startAtLogin(enabled: true)
     }
   }
   
@@ -332,7 +332,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, WebSocketDelegate, UniqueArr
     NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.updateNotificationSentLabel), name: Notification.Name.receiveServiceURIs, object: nil)
   }
   
-  func getProxyEnabled() -> Bool  {
+  func isProxyEnabled() -> Bool  {
     let prefRef = SCPreferencesCreate(nil, "KeyTalk Client" as CFString, nil)!
     
     var enabled = true;
@@ -669,7 +669,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, WebSocketDelegate, UniqueArr
     }
     
     if(menuItem ==  enableDisableProxyItem) {
-      if getProxyEnabled() {
+      if isProxyEnabled() {
         enableDisableProxyItem.title = "De-activate KeyTalk Proxy Client"
         enableDisableProxyItem.action = #selector(AppDelegate.disableProxy(_:))
       } else {
@@ -694,7 +694,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, WebSocketDelegate, UniqueArr
     }
   }
   
-  func startAtLogin(value: Bool) {
+  func startAtLogin(enabled: Bool) {
     var url = Bundle.main.bundleURL
     
     url = url.appendingPathComponent("Contents", isDirectory: true)
@@ -708,8 +708,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, WebSocketDelegate, UniqueArr
     
     let identifier = "com.keytalk.LaunchAtLoginHelperApp" as CFString
     
-    userDefaults.set(value, forKey: "launchAtLogin")
-    SMLoginItemSetEnabled(identifier, value)
+    userDefaults.set(enabled, forKey: "launchAtLogin")
+    SMLoginItemSetEnabled(identifier, enabled)
 
     userDefaults.synchronize()
   }
@@ -717,11 +717,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, WebSocketDelegate, UniqueArr
   @IBAction func startAtLoginItem(_ sender: NSMenuItem) {
     switch sender.state {
     case 0:
-      startAtLogin(value: true)
-    case 1:
-      startAtLogin(value: false)
+      startAtLogin(enabled: true)
     default:
-      startAtLogin(value: false)
+      startAtLogin(enabled: false)
     }
   }
   

@@ -17,9 +17,9 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>5.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>5</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>NSHumanReadableCopyright</key>
@@ -32,24 +32,24 @@
 	<true/>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.utilities</string>
-  <key>CFBundleDocumentTypes</key>
-  <array>
-    <dict>
-      <key>CFBundleTypeExtensions</key>
-      <array>
-        <string>rccd</string>
-      </array>
-      <key>CFBundleTypeIconFile</key>
-      <string>AppIcon.icns</string>
-      <key>CFBundleTypeName</key>
-      <string>KeyTalk RCCD Configuration</string>
-      <key>CFBundleTypeOSTypes</key>
-      <array>
-        <string>rccd</string>
-      </array>
-      <key>CFBundleTypeRole</key>
-      <string>Editor</string>
-    </dict>
-  </array>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>rccd</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>AppIcon.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>KeyTalk RCCD Configuration</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>rccd</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+	</array>
 </dict>
 </plist>
