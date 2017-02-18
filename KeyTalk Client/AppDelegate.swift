@@ -235,7 +235,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, WebSocketDelegate, UniqueArr
     
     // use applicationdata folder
     bootstrapTask.launchPath = keytalkProxyURL().path
-    bootstrapTask.arguments = ["bootstrap"]
+    bootstrapTask.arguments = ["--library-path", getApplicationURL().absoluteString, "--keychain-path", getKeychainURL().absoluteString, "--cache-path", getCacheURL().absoluteString, "bootstrap"]
     bootstrapTask.launch()
     bootstrapTask.waitUntilExit()
     
@@ -406,6 +406,12 @@ class AppDelegate: NSObject, NSApplicationDelegate, WebSocketDelegate, UniqueArr
     toggleProxy(enable: true)
   }
   
+  
+  func getCacheURL() -> URL {
+    let url = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0].appendingPathComponent("KeyTalk")
+    return(url)
+  }
+  
   func getKeychainURL() -> URL {
     let url = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask)[0].appendingPathComponent("Keychains").appendingPathComponent("login.keychain")
     return(url)
@@ -531,7 +537,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, WebSocketDelegate, UniqueArr
     task = Process()
     
     task.launchPath = keytalkProxyURL().path
-    task.arguments = ["run"]
+    
+    task.arguments = ["--library-path", getApplicationURL().absoluteString, "--keychain-path", getKeychainURL().absoluteString, "--cache-path", getCacheURL().absoluteString, "run"]
     
     let pipe:Pipe = Pipe()
     task.standardOutput = pipe
