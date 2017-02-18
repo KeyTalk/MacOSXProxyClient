@@ -536,6 +536,16 @@ class AppDelegate: NSObject, NSApplicationDelegate, WebSocketDelegate, UniqueArr
     let pipe:Pipe = Pipe()
     task.standardOutput = pipe
     
+    let outHandle = pipe.fileHandleForReading
+    
+    outHandle.readabilityHandler = { pipe in
+      if let line = String(data: pipe.availableData, encoding: String.Encoding.utf8) {
+        print("\(line)")
+      } else {
+        print("Error decoding data: \(pipe.availableData)")
+      }
+    }
+    
     task.terminationHandler = {
       task in
       DispatchQueue.main.async(execute: {
